@@ -2,10 +2,14 @@
 
 ## Оглавление
 [1.Описание проекта](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#Описание-проекта)
+
 [2.Какой кейс решаем?](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#Какой-кейс-решаем?)
+
 [3.Условия задания](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#ОУсловия-задания)
+
 [4.Метрики качества](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#Метрики-качества)
-[5.Что практикуем](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#Что-практикуем?)
+
+[5.Что практикуем?](https://github.com/schdlr50/SF_homework/tree/main/final_task/README.md#Что-практикуем?)
 
 ### Описание проекта
 Угадать загаданное компьютером число меньше 20 попыток.
