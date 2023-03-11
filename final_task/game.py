@@ -52,18 +52,18 @@ def game_core_v3(numberZ: int = 1) -> int:
     Returns:
         int: Число попыток
     """
-    max = 101
-    count = 0
+    max = 101 # добавил границу, которую буду в последствие уменьшать для сокращения количества неверных ответов
+    count = 0 # установил счетчик
     my_predict=np.random.randint(1,101)
-    while numberZ != my_predict:
-        count += 1
-        if my_predict > numberZ:
-            max = my_predict
-            my_predict = round(my_predict/2)
-        elif my_predict < numberZ:
-            my_predict = round((my_predict+max)/2)
+    while numberZ != my_predict: # добавил основную функцию
+        count += 1 # теперь при каждой новой попытке счетчик будет увеличиваться на 1
+        if my_predict > numberZ: # добавил условие, если предполагаемое число больше загаданного 
+            max = my_predict # если выполняется предыдущее условие то сужаем границы поиска
+            my_predict = round(my_predict/2) # а так же присваемваем предполагаемому числу значение в два раза меньше предыдущего, и обязательно округляем его
+        elif my_predict < numberZ: # добавил условие, если предполагаемое число меньше загаданного
+            my_predict = round((my_predict+max)/2) # присваеваем предполагаемому числу среднеарифметическое значение его суммы и установленного максимума
     
-    return count
+    return count # возвращаем счетчик
 
 def score_game(random_predict) -> int:
     """За какое количество попыток в среднем за 10000 подходов угадывает наш алгоритм
